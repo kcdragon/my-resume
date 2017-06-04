@@ -1,5 +1,15 @@
-default: clean resume.pdf
+default: resume
+
+resume: clean-resume resume.pdf
 resume.pdf:
 	pdflatex resume.tex
-clean:
+
+letter: clean-letter letter.pdf
+letter.pdf:
+	pdflatex letter.tex
+
+clean-letter:
+	rm -f letter.pdf
+clean-resume:
 	rm -f resume.pdf
+clean: clean-resume clean-letter

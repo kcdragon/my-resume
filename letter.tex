@@ -1,0 +1,42 @@
+% Cover letter using letter.sty
+\documentclass{letter} % Uses 10pt
+\usepackage{hyperref}
+%Use \documentstyle[newcent]{letter} for New Century Schoolbook postscript font
+% the following commands control the margins:
+\topmargin=-1in    % Make letterhead start about 1 inch from top of page
+\textheight=8in  % text height can be bigger for a longer letter
+\oddsidemargin=0pt % leftmargin is 1 inch
+\textwidth=6.5in   % textwidth of 6.5in leaves 1 inch for right margin
+
+\newcommand{\companyName}{Company Name}
+
+\begin{document}
+
+%\signature{Mike Dalton}
+%\longindentation=0pt                       % needed to get closing flush left
+%\let\raggedleft\raggedright                % needed to get date flush left
+
+\begin{flushleft}
+{\large\bf Mike Dalton}
+\end{flushleft}
+\medskip\hrule height 1pt
+\begin{flushright}
+\hfill michaelcdalton@gmail.com \\
+\hfill (267) 247-2541
+\end{flushright}
+
+Dear \companyName{},
+
+I am reaching out to you because I am interested in your Software Engineer position. I've spent the last 4 years working with Ruby on Rails. I consider myself a problem solver. I love working with clients to get to the root of their problem. I think this would be a good fit for what you are doing at \companyName{}.
+
+At my current position at Zoomer, I am working on their product team. My team develops two applications: a routing application and a UI for dispatchers. The routing application receives orders from restaurants and determines the optimal pairings for those orders and drivers that are available to deliver those orders. The dispatcher UI is used by our dispatchers to give them a view of the drivers and orders and help them troubleshoot any problems.
+
+Previous to Zoomer, I was a lead developer on a project team at WebLinc. While at WebLinc, I lead development efforts on several sites including \url{https://jefferspet.com}, \url{https://www.idville.com} and \url{https://www.purepromo.com}. The development of these sites required constant communication with internal team members and the client. Most sites involved integrations with 3rd party fulfillment systems, payment gateways and email service providers.
+
+I would love to set up a time for us to meet and discuss the role in more depth. In addition to my resume, I've included some code samples. Thank you for considering my application.
+
+Sincerely,
+
+Mike Dalton
+
+\end{document}
