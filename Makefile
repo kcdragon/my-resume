@@ -12,4 +12,6 @@ clean-letter:
 	rm -f letter.pdf
 clean-resume:
 	rm -f resume.pdf
-clean: clean-resume clean-letter
+clean-log:
+	rm -f resume.log
+clean: clean-resume clean-letter clean-log
