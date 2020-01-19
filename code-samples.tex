@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\usepackage{hyperref}
+
+\begin{document}
+\section{Mongration}
+Mongration (\url{https://github.com/kcdragon/mongration}) is an open source database migration tool for MongoDB. It is designed to be included as a Gem in any Ruby project. I developed Mongration while working with MongoDB and realizing I still had a need for migrations. MongoDB does not require migrations for schema changes however there are still times when you need to change field names, create lookup tables, etc. and having a standardized way of doing it proved invaluable. Mongration has the same interface as ActiveRecord migrations so it fits in nicely with other Gems that make use of ActiveRecord’s Rake tasks (like deploying with Capistrano).
+
+\section{JRuby Contributions}
+After seeing a couple talks on JRuby at the most recent RubyConf, I was inspired to send some pull requests to JRuby. Here are links to the pull requests I made for implementing the \verb|empty?| method on \verb|File|, \verb|Dir| and \verb|Pathname|.
+
+\begin{itemize}
+\item \verb|File.empty?| \url{https://github.com/jruby/jruby/pull/4296}
+\item \verb|Dir.empty?| \url{https://github.com/jruby/jruby/pull/4301}
+\item \verb|Pathname#empty?| \url{https://github.com/jruby/jruby/pull/4322}
+\end{itemize}
+
+In addition to the code in the pull requests, I think that the descriptions and comments will give you some insight into my thought process as a developer.
+
+\section{Blog Post on Functional Programming}
+See \url{http://www.weblinc.com/labs/functional-programming-discounts/}. This not strictly a code sample but it does present some of my thoughts on functional programming so I thought it would be a good example of my work.
+
+\end{document}
